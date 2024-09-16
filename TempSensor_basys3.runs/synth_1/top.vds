@@ -1,0 +1,459 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep 16 21:44:11 2024
+# Process ID: 28380
+# Current directory: C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.runs/synth_1/top.vds
+# Journal file: C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 36668 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 922.406 ; gain = 178.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'i2c_master' [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/i2c_master.v:22]
+	Parameter sensor_address_plus_read bound to: 8'b10010111 
+	Parameter POWER_UP bound to: 5'b00000 
+	Parameter START bound to: 5'b00001 
+	Parameter SEND_ADDR6 bound to: 5'b00010 
+	Parameter SEND_ADDR5 bound to: 5'b00011 
+	Parameter SEND_ADDR4 bound to: 5'b00100 
+	Parameter SEND_ADDR3 bound to: 5'b00101 
+	Parameter SEND_ADDR2 bound to: 5'b00110 
+	Parameter SEND_ADDR1 bound to: 5'b00111 
+	Parameter SEND_ADDR0 bound to: 5'b01000 
+	Parameter SEND_RW bound to: 5'b01001 
+	Parameter REC_ACK bound to: 5'b01010 
+	Parameter REC_MSB7 bound to: 5'b01011 
+	Parameter REC_MSB6 bound to: 5'b01100 
+	Parameter REC_MSB5 bound to: 5'b01101 
+	Parameter REC_MSB4 bound to: 5'b01110 
+	Parameter REC_MSB3 bound to: 5'b01111 
+	Parameter REC_MSB2 bound to: 5'b10000 
+	Parameter REC_MSB1 bound to: 5'b10001 
+	Parameter REC_MSB0 bound to: 5'b10010 
+	Parameter SEND_ACK bound to: 5'b10011 
+	Parameter REC_LSB7 bound to: 5'b10100 
+	Parameter REC_LSB6 bound to: 5'b10101 
+	Parameter REC_LSB5 bound to: 5'b10110 
+	Parameter REC_LSB4 bound to: 5'b10111 
+	Parameter REC_LSB3 bound to: 5'b11000 
+	Parameter REC_LSB2 bound to: 5'b11001 
+	Parameter REC_LSB1 bound to: 5'b11010 
+	Parameter REC_LSB0 bound to: 5'b11011 
+	Parameter NACK bound to: 5'b11100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/i2c_master.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master' (1#1) [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/i2c_master.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clkgen_200kHz' [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/clkgen_200kHz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkgen_200kHz' (2#1) [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/clkgen_200kHz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg7' [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/seg7.v:23]
+	Parameter ZERO bound to: 7'b0000001 
+	Parameter ONE bound to: 7'b1001111 
+	Parameter TWO bound to: 7'b0010010 
+	Parameter THREE bound to: 7'b0000110 
+	Parameter FOUR bound to: 7'b1001100 
+	Parameter FIVE bound to: 7'b0100100 
+	Parameter SIX bound to: 7'b0100000 
+	Parameter SEVEN bound to: 7'b0001111 
+	Parameter EIGHT bound to: 7'b0000000 
+	Parameter NINE bound to: 7'b0000100 
+	Parameter DEG bound to: 7'b0011100 
+	Parameter C bound to: 7'b0110001 
+	Parameter F bound to: 7'b0111000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/seg7.v:92]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/seg7.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/seg7.v:121]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/seg7.v:134]
+INFO: [Synth 8-6155] done synthesizing module 'seg7' (3#1) [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/seg7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'temp_converter' [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/temp_converter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'multiply_by_9' [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/multiply_by_9.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'multiply_by_9' (4#1) [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/multiply_by_9.v:22]
+INFO: [Synth 8-6157] synthesizing module 'divide_by_5' [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/divide_by_5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'divide_by_5' (5#1) [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/divide_by_5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'add_32' [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/add_32.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'add_32' (6#1) [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/add_32.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'temp_converter' (7#1) [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/temp_converter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (8#1) [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 985.617 ; gain = 241.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 985.617 ; gain = 241.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 985.617 ; gain = 241.980
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1097.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1097.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1097.441 ; gain = 353.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1097.441 ; gain = 353.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1097.441 ; gain = 353.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'i2c_master'
+INFO: [Synth 8-5546] ROM "tLSB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tMSB" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                POWER_UP |                            10100 |                            00000
+                   START |                            00011 |                            00001
+              SEND_ADDR6 |                            01100 |                            00010
+              SEND_ADDR5 |                            01001 |                            00011
+              SEND_ADDR4 |                            01010 |                            00100
+              SEND_ADDR3 |                            11100 |                            00101
+              SEND_ADDR2 |                            11010 |                            00110
+              SEND_ADDR1 |                            10111 |                            00111
+              SEND_ADDR0 |                            11000 |                            01000
+                 SEND_RW |                            11011 |                            01001
+                 REC_ACK |                            10110 |                            01010
+                REC_MSB7 |                            10011 |                            01011
+                REC_MSB6 |                            00101 |                            01100
+                REC_MSB5 |                            00100 |                            01101
+                REC_MSB4 |                            00000 |                            01110
+                REC_MSB3 |                            00001 |                            01111
+                REC_MSB2 |                            01110 |                            10000
+                REC_MSB1 |                            01011 |                            10001
+                REC_MSB0 |                            01000 |                            10010
+                SEND_ACK |                            00110 |                            10011
+                REC_LSB7 |                            00111 |                            10100
+                REC_LSB6 |                            11001 |                            10101
+                REC_LSB5 |                            10010 |                            10110
+                REC_LSB4 |                            10000 |                            10111
+                REC_LSB3 |                            10001 |                            11000
+                REC_LSB2 |                            10101 |                            11001
+                REC_LSB1 |                            01111 |                            11010
+                REC_LSB0 |                            01101 |                            11011
+                    NACK |                            00010 |                            11100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'i2c_master'
+WARNING: [Synth 8-327] inferring latch for variable 'SEG_reg' [C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.srcs/sources_1/new/seg7.v:83]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1097.441 ; gain = 353.805
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  29 Input     12 Bit        Muxes := 1     
+	  29 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	  22 Input      7 Bit        Muxes := 1     
+	  25 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  29 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	  22 Input      1 Bit        Muxes := 1     
+	  25 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module i2c_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	  29 Input     12 Bit        Muxes := 1     
+	  29 Input      8 Bit        Muxes := 4     
+	  29 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module clkgen_200kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module seg7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	  22 Input      7 Bit        Muxes := 1     
+	  25 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  22 Input      1 Bit        Muxes := 1     
+	  25 Input      1 Bit        Muxes := 1     
+Module add_32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1097.441 ; gain = 353.805
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:45 . Memory (MB): peak = 1097.441 ; gain = 353.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:45 . Memory (MB): peak = 1110.996 ; gain = 367.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 1141.789 ; gain = 398.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1147.602 ; gain = 403.965
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1147.602 ; gain = 403.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1147.602 ; gain = 403.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1147.602 ; gain = 403.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1147.602 ; gain = 403.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1147.602 ; gain = 403.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    10|
+|3     |LUT1   |     5|
+|4     |LUT2   |    32|
+|5     |LUT3   |    22|
+|6     |LUT4   |    23|
+|7     |LUT5   |    34|
+|8     |LUT6   |    96|
+|9     |FDRE   |    61|
+|10    |FDSE   |     6|
+|11    |LD     |     7|
+|12    |IBUF   |     2|
+|13    |IOBUF  |     1|
+|14    |OBUF   |    20|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+---------------+------+
+|      |Instance  |Module         |Cells |
++------+----------+---------------+------+
+|1     |top       |               |   321|
+|2     |  cgen    |clkgen_200kHz  |    22|
+|3     |  master  |i2c_master     |   194|
+|4     |  seg     |seg7           |    75|
+|5     |  tc      |temp_converter |     5|
+|6     |    MULT9 |multiply_by_9  |     5|
++------+----------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1147.602 ; gain = 403.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:45 . Memory (MB): peak = 1147.602 ; gain = 292.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1147.602 ; gain = 403.965
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1163.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LD => LDCE: 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:01:01 . Memory (MB): peak = 1163.641 ; gain = 673.215
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1163.641 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arya2/TempSensor_basys3/TempSensor_basys3.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 16 21:45:31 2024...
